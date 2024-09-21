@@ -1,0 +1,61 @@
+.sidebar {
+  width: 250px;
+  background-color: #3e222e;
+  color: #e8b1d3;
+  padding: 20px;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 80px; /* Adjusted width for collapsed state */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Ensure no margin for the list */
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  display: flex; /* Added flex for better alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.sidebar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  flex-grow: 1; /* Allow link to take available space */
+  display: flex; /* Enable flex for better alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.sidebar ul li a svg {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.sidebar ul li:hover {
+  background-color: #705761;
+}
+
+.collapse-btn {
+  background: none;
+  border: none;
+  color: #cd76a4;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: flex; /* Center the icon */
+  justify-content: center; /* Center the icon */
+  align-items: center; /* Center the icon */
+}
+
+.sidebar.collapsed .collapse-btn {
+  justify-content: center; /* Center icon when collapsed */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+}
