@@ -4,7 +4,7 @@ import './StatCard.css';
 const StatCard = ({ title, count }) => {
   return (
     <div className={`stat-card`}>
-      <h3>{title}</h3>
+      <h3 style={{fontWeight:'bold'}}>{title}</h3>
       <p>{count}</p>
     </div>
   );
